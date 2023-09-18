@@ -1,0 +1,552 @@
+:root {
+    --main-white: #ebeaea;
+    --main-dark-blue: rgb(25, 40, 55);
+    --main-orange: rgb(200, 50, 5);
+    --main-blue: rgb(20, 30, 40);
+  }
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.navbar{
+    background-color: var(--main-blue);
+    position: absolute;
+    width: 100%;
+}
+.logo{
+    padding: 10px 0 0 10px;
+    height: 8.5vh;
+    float: left;
+}
+.navbar li{
+    position: relative;
+    display: inline-block;
+    padding: 20px ;
+}
+.navbar ul{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+.navbar a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: var(--main-white); 
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: verdana, sans-serif;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+    text-align: right;
+}
+/*.navbar a:after{
+    content:"";
+    position: absolute;
+    background-color: var(--main-white);
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    bottom: -25%;
+    transition: 0.3s;
+}*/
+.navbar a:hover{
+    color: var(--main-orange);
+}
+.navbar a:hover:after{
+    width: 100%;
+}
+body{
+    background-color: var(--main-dark-blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section, footer{
+    color: var(--main-white);
+}
+section{
+    justify-content:center;
+    padding-top: 10%;
+    text-align: center;
+}
+.home-section{
+    /*padding: 25px;*/
+    color: var(--main-orange);
+    background-image: url("Bg\ Files/bg-home.jpg");
+    height: 100vh;
+    background-attachment:scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+/*.div-home{
+    background-image: url("Bg\ Files/bg-home.jpg");
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20%;
+    background-attachment:scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}*/
+h1{
+    font-size: 3rem;
+    text-align: left;
+    padding: 10% 10% 0% 5%;
+}
+h2{
+    font-size: 2.5rem;
+}
+h1, h2{
+    font-family:'monospace', sans-serif;
+    font-weight: 700;
+    
+    /*padding-top: 20%;*/
+}
+.home-section > p{
+    font-family:'Calibri', sans-serif;
+    font-style: italic;
+    font-size:1.7rem ;
+    font-weight: 200;
+    text-align: left;
+    padding: 2% 5% 0% 5%;
+}
+.click-me{
+    text-align: left;
+    padding: 5% 5% 0.5% 30% ; 
+}
+.click-me a{
+    color: var(--main-white);
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: verdana, sans-serif; 
+    border: 2px solid var(--main-white);
+    border-radius: 5px;
+    padding: 10px 5%;
+    font-family:'Calibri', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    transition: transform 0.3s ease-out;
+}
+.click-me a:hover{
+    border: 2px solid var(--main-orange) ;
+    color: var(--main-orange);
+    transform: translateY(8px);
+}
+.download-cv{
+    text-align: left;
+    padding: 5% 5% 5% 20% ; 
+}
+.download-cv a{
+    color: var(--main-white);
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family:'Calibri', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    transition: transform 0.3s ease-out;
+}
+.download-cv a:hover{
+    color: var(--main-orange);
+    transform: translateY(8px);
+}
+.project-section{
+    background-image: url("Bg\ Files/bg-about-me.jpg");
+    height: 100vh;
+    background-attachment:scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.project-section-header {
+    text-align: left;
+    padding-left: 30%;
+    padding-top: 7%;
+    width: 100%;
+}
+.project-section > p{
+    font-family:'Calibri', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    margin: 0% 30% 0% 0%;
+    padding: 25px 0% 0% 30%;
+    font-weight: lighter;
+}
+.project-section .pars{
+    font-family:'Calibri', sans-serif;
+    text-align: left;
+    font-size: 10px;
+    padding: 0px 0% 0% 30%;
+    font-style: italic;
+    font-weight: lighter;
+}
+  .contact-section{
+    background-image: url("Bg\ Files/bg-contact.jpg");
+    height: 100vh;
+    background-attachment:scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-section-header > h2 {
+    font-size: 3rem;
+}
+.contact-section-header > p {
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 2rem;
+    font-family:'Calibri', sans-serif;
+}
+.contact-list{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+.contact-details{
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--main-white);
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+.contact-details:hover{
+    color: var(--main-orange);
+    transform: translateY(8px);
+}
+  
+/*FOOTER*/
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-dark-blue);
+    border-top: 4px solid var(--main-orange);
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 600px) {
+*{
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    padding: 15px 0 0 2px;
+    height: 6.5vh;
+    float: left;     
+}
+.navbar{
+    background-color: var(--main-blue);
+    position: fixed;
+}
+.navbar li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+.navbar ul{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+.navbar a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: var(--main-white); 
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+    text-align: right;
+}
+.home-section{
+    color: var(--main-orange);
+    background-image: url("Bg\ Files/bg-home-mobile.jpg");
+    height: 100vh;
+    background-attachment:scroll;
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.home-section h1{
+    font-size: 1.7rem;
+    text-align: center;
+    justify-content: center;
+    padding: 13% 0% 0% 1%;
+}
+.home-section > p{
+    font-size:1rem;
+    text-align: center;
+}
+
+.download-cv{
+    text-align: center;
+    padding: 1% 5% 5% 5% ; 
+}
+.download-cv a{
+    color: var(--main-white);
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:'Calibri', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+.project-section{
+    background-image:url()("Bg\ Files/bg-about-me.jpg");
+    height: 100vh;
+    background-size: 100%;
+    background-attachment:scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.project-section h2{
+    font-size: 1.7rem;
+    text-align: left;
+    padding: 35% 0% 0% 13%;
+}
+.project-section > p{
+    font-family:'Calibri', sans-serif;
+    font-size:1rem;
+    text-align: left;
+    padding: 25px 2% 0% 13%;
+    font-weight: lighter;
+}
+.project-section .pars{
+    font-family:'Calibri', sans-serif;
+    text-align: left;
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 10px 0% 0% 24.5%;
+    font-style: italic;
+    font-weight: lighter;
+}
+.click-me{
+    text-align: center;
+    padding: 15% 0% 0% 0% ;
+    
+}
+.click-me a{
+    color: var(--main-white);
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: verdana, sans-serif; 
+    border: 1.5px solid var(--main-white);
+    border-radius: 5px;
+    padding: 10px 10% 10px 10%;
+    font-family:'Calibri', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    transition: transform 0.3s ease-out;
+}
+.contact-section-header > p {
+    font-family:'Calibri', sans-serif;
+    font-style: italic;
+    font-size:1.3rem ;
+    font-weight: 200;
+    text-align:center;
+    padding: 2.5% 5% 0% 5%;
+}
+.contact-section h2{
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 10%;
+}
+.contact-section{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.contact-details{
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--main-white);
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+}
+@media screen and (max-widht: 380px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navbar{
+        background-color: var(--main-blue);
+        position: fixed;
+    }
+    .navbar li{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .navbar ul{
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: var(--main-white); 
+        font-size: 5px;
+        text-transform: uppercase;
+        font-family: 'Verdana', sans-serif;
+        text-align: center;
+    }
+    .home-section{
+        color: var(--main-orange);
+        background-image: url("Bg\ Files/bg-home-mobile.jpg");
+        height: 100vh;
+        background-attachment:scroll;
+        background-size:100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    .home-section h1{
+        font-size: 1.7rem;
+        text-align: center;
+        justify-content: center;
+        padding: 13% 0% 0% 1%;
+    }
+    .home-section > p{
+        font-size:1rem;
+        text-align: center;
+    }
+    
+    .download-cv{
+        text-align: center;
+        padding: 1% 5% 5% 5% ; 
+    }
+    .download-cv a{
+        color: var(--main-white);
+        list-style: none;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        font-family:'Calibri', sans-serif;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .project-section{
+        background-image:url()("Bg\ Files/bg-about-me.jpg");
+        height: 100vh;
+        background-size: 100%;
+        background-attachment:scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    .project-section h2{
+        font-size: 1.7rem;
+        text-align: left;
+        padding: 35% 0% 0% 13%;
+    }
+    .project-section > p{
+        font-family:'Calibri', sans-serif;
+        font-size:1rem;
+        text-align: left;
+        padding: 25px 2% 0% 13%;
+        font-weight: lighter;
+    }
+    .project-section .pars{
+        font-family:'Calibri', sans-serif;
+        text-align: left;
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 10px 0% 0% 24.5%;
+        font-style: italic;
+        font-weight: lighter;
+    }
+    .click-me{
+        text-align: center;
+        padding: 15% 0% 0% 0% ;
+        
+    }
+    .click-me a{
+        color: var(--main-white);
+        list-style: none;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: verdana, sans-serif; 
+        border: 1.5px solid var(--main-white);
+        border-radius: 5px;
+        padding: 10px 10% 10px 10%;
+        font-family:'Calibri', sans-serif;
+        font-size: 1rem;
+        font-style: italic;
+        transition: transform 0.3s ease-out;
+    }
+    .contact-section-header > p {
+        font-family:'Calibri', sans-serif;
+        font-style: italic;
+        font-size:1.3rem ;
+        font-weight: 200;
+        text-align:center;
+        padding: 2.5% 5% 0% 5%;
+    }
+    .contact-section h2{
+        font-size: 1.7rem;
+        text-align: center;
+        padding-top: 10%;
+    }
+    .contact-section{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    .contact-details{
+        font-size: 1rem;
+        text-decoration: none;
+        padding: 20px;
+        color: var(--main-white);
+        text-shadow: 2px 2px 1px #1f1f1f;
+        transition: transform 0.3s ease-out;
+    }
+}
