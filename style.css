@@ -325,10 +325,10 @@ footer {
 }
 .project-section{
     background-image:url("Bg\ Files/bg-about-me.jpg");
-    height: 100%;
+    height: 100vh;
     background-size: 100%;
+    margin: 0%;
     background-size:cover;
-    background-attachment:scroll;
     background-repeat: no-repeat;
     background-position:center;
 }
